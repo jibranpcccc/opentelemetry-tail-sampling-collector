@@ -1,0 +1,30 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "OpenTelemetryLab API",
+    "version": "1.0.0",
+    "description": "OpenTelemetry Collector Tail-Sampling Configurations, Tempo vs Jaeger Storage Math",
+    "contact": {
+      "name": "OpenTelemetryLab",
+      "url": "https://opentelemetrylab.pages.dev/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://opentelemetrylab.pages.dev/",
+      "description": "Production Edge"
+    }
+  ],
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "summary": "Healthcheck",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
